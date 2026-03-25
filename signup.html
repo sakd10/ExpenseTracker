@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Signup</h2>
+
+<div class="form-box">
+    <input type="text" id="newUser" placeholder="Username">
+    <br>
+    <input type="password" id="newPass" placeholder="Password">
+    <br>
+    <button onclick="signup()">Sign Up</button>
+</div>
+
+<p>Already have account? <a href="login.html">Login</a></p>
+
+<script>
+function signup() {
+    let user = document.getElementById("newUser").value;
+    let pass = document.getElementById("newPass").value;
+
+    let data = {
+        username: user,
+        password: pass
+    };
+
+    localStorage.setItem("user", JSON.stringify(data));
+
+    alert("Signup successful");
+}
+</script>
+
+</body>
+</html>

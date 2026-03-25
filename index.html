@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Expense Tracker</h2>
+<input type="text" id="category" placeholder="Category">
+<input type="number" id="amount" placeholder="Amount">
+<input type="text" id="comments" placeholder="Comments">
+<button onclick="addExpense()">Add</button>
+
+<br><br>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Created At</th>
+            <th>Updated At</th>
+            <th>Comments</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
